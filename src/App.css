@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(22, 22, 22);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell {
+  width: 200px;
+  height: 200px;
+  border: 2px solid white;
+  font-size: 40px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.cells {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.cell input {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid rgb(37, 37, 37);
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cell input:focus {
+  border: 1px solid rgb(56, 56, 56)
+}
+
+span {
+  cursor: pointer;
+  height: 200px;
+  border-radius: 20px;
+  width: 20px;
+  position: absolute;
+  right: -20px;
+  z-index: 1;
+  transition: 0.1s;
+}
+
+span:hover {
+  background-color: rgba(151, 255, 81, 0.37);
+  opacity: 20;
+}
+
+.combined {
+  height: 30px;
+  color: white;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
